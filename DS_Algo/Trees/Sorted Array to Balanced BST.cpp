@@ -17,8 +17,7 @@ TNode* newNode(int data);
   
 /* A function that constructs Balanced
 Binary Search Tree from a sorted array */
-TNode* sortedArrayToBST(int arr[], 
-                        int start, int end) 
+TNode* sortedArrayToBST(int arr[], int start, int end) 
 { 
     /* Base Case */
     if (start > end) 
