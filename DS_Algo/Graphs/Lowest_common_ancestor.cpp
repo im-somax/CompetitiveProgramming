@@ -11,10 +11,9 @@ int par[N];
 //       2. Then using those path find the point of diversion in it.
 
 void dfs(int vertex, int p=-1){ 
-    par[v] = p;
+    par[vertex] = p;
     for(int child: g[vertex]){ 
         if(child == p) continue; // check condition for having track of parent.
-        depth[child] = depth[vertex]+1;
         dfs(child, vertex); 
     } 
 } 
